@@ -32,7 +32,20 @@
                     </li>
                     <li class="nav-item"></li>
                     <li class="nav-item"><a class="nav-link" href="komunikasi.html" style="margin-left: 15px;">Komunikasi</a></li>
-                </ul><a class="btn btn-primary shadow" role="button" style="background: rgb(156,156,156);margin-bottom: 0px;padding-top: 12px;margin-left: 12px;padding-right: 32px;padding-left: 32px;margin-top: -3px;" href="tel:+605-2434849" href="https://wa.me/+601128112570">Hubungi Kami!</a>
+                </ul><a class="btn btn-primary shadow" role="button" style="background: rgb(156,156,156);margin-bottom: 0px;padding-top: 12px;margin-left: 12px;padding-right: 32px;padding-left: 32px;margin-top: -3px;" id="myButton" onclick="performAction()">Hubungi Kami!</a>
+<script>
+  function isPhone() {
+    return window.innerWidth <= 600; // Adjust the threshold based on your needs
+  }
+
+  function performAction() {
+    if (isPhone()) {
+      window.location.href = "tel:+601128112570";  // Phone link
+    } else {
+      window.location.href = "https://wa.me/+601128112570";  // Computer link
+    }
+  }
+</script>
             </div>
         </div>
     </nav><!-- End: Navbar Centered Links -->
