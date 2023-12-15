@@ -1,0 +1,36 @@
+.nav-item dropdown:hover.dropdown menu {
+  display: block;
+}
+
+.dropdown:hover.dropdown-menu {
+  display: block;
+}
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+}
+
+#myDropdown {
+  display: none;
+  position: absolute;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover.dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
